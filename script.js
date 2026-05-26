@@ -30,3 +30,10 @@ setInterval(() => {
   `;
 
 }, 1000);
+const music = document.getElementById("musica");
+
+music.volume = 1;
+
+document.addEventListener("click", () => {
+  music.play();
+}, { once: true });
